@@ -26,7 +26,7 @@ document.getElementById('simulator-form').addEventListener('submit', function(ev
 
     
     // Limpa o formulário
-    
+    document.getElementById('simulator-form').reset();
   });
   
   function sendWhatsAppMessage(number, message) {
