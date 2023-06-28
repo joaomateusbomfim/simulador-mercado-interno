@@ -1,7 +1,7 @@
 document.getElementById('simulator-form').addEventListener('submit', function(event) {
     event.preventDefault();
   
-    var name = document.getElementById('name').value;
+    var fullname = document.getElementById('name').value;
     var whatsapp = document.getElementById('whatsapp').value;
     var quantity = parseFloat(document.getElementById('quantity').value);
     var price = parseFloat(document.getElementById('price').value);
@@ -15,7 +15,7 @@ document.getElementById('simulator-form').addEventListener('submit', function(ev
     }
   
     // Envia mensagem pelo WhatsApp
-    var message = 'Olá, ' + name + '! O valor total bruto é de: $' + totalBruto.toFixed(2);
+    var message = 'Olá, ' + fullname + '! O valor total bruto é de: $' + totalBruto.toFixed(2);
     // sendWhatsAppMessage(whatsapp, message);
     console.log(message);
     console.log(`Whatsapp: `, whatsapp);
