@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  
+</head>
+<body>
+  <h1>Simulador de Mercado Interno</h1>
+  <form id="simulator-form">
+    <label for="name">Nome:</label>
+    <input type="text" id="name" name="name" required>
+    
+    <label for="whatsapp">Whatsapp:</label>
+    <input type="tel" id="whatsapp" name="whatsapp" required>
+    
+    <label for="quantity">Quantidade (tons):</label>
+    <input type="number" id="quantity" name="quantity" required>
+    
+    <label for="price">Preço em U$:</label>
+    <input type="number" step="0.01" id="price" name="price" required>
+    
+    <label for="cooperative">Cooperativa (%):</label>
+    <input type="number" step="0.01" id="cooperative" name="cooperative" required>
+    
+    <label for="funrural">Funrural:</label>
+    <input type="checkbox" id="funrural" name="funrural">
+    <label for="funrural">Sim</label>
+    
+    <button type="submit">Calcular</button>
+  </form>
+</body>
+<script src="script.js"></script>
+</html>
