@@ -18,10 +18,11 @@ document.getElementById('simulator-form').addEventListener('submit', function(ev
     var message = 'Olá, ' + name + '! O valor total bruto é de: $' + totalBruto.toFixed(2);
     // sendWhatsAppMessage(whatsapp, message);
     console.log(message);
-    console.log(whatsapp);
-    console.log(quantity);
-    console.log(price);
-    console.log(cooperative);
+    console.log(`Whatsapp: `whatsapp);
+    console.log(`Quantidade: `quantity);
+    console.log(`Preço em Dólar: `price);
+    console.log(`Cooperativa: `cooperative);
+    console.log(`Tem funrural: `funrural);
 
     
     // Limpa o formulário
