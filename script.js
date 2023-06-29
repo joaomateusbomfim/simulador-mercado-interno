@@ -26,10 +26,7 @@ document.getElementById('calculador-form').addEventListener('submit', function(e
     // abrir página para confirmar recebimento
     
     /*
-    document.querySelector('button[type="submit"]').addEventListener('click', function() {
-       var url = `sucess.html?message=${encodeURIComponent(message)}`;
-      window.open(url, '_blank');
-    });
+    
     */
     // Limpa o formulário
     document.getElementById('calculador-form').reset();
@@ -41,6 +38,12 @@ document.getElementById('calculador-form').addEventListener('submit', function(e
     // Aqui está apenas um exemplo de como poderia ser feito:
     console.log('Enviando mensagem para o número', number, ':', message);
   }
+  /*
   document.querySelector('button[type="submit"]').addEventListener('click', function() {
     window.open('enviado.html');
   });
+  */
+  document.querySelector('button[type="submit"]').addEventListener('click', function() {
+    var url = `enviado.html?message=${encodeURIComponent(message)}`;
+   window.open(url, '_blank');
+ });
