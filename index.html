@@ -5,37 +5,29 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <title>Simulador de Mercado Interno</title>
 
 </head>
 
 <body>
     <h1>Simulador de Mercado Interno</h1>
-    <form id="simulator-form" name="simulator-form" method="post" action="/sucess.html" data-netlify="true">
+    <form id="simulator-form" name="simulator-form" method="post" action="/calculo.html" data-netlify="true">
         <label for="fullname">Nome:</label>
         <input type="text" id="fullname" name="fullname" required>
 
         <label for="whatsapp">Whatsapp:</label>
         <input type="tel" id="whatsapp" name="whatsapp" required>
 
-        <label for="quantity">Quantidade (tons):</label>
-        <input type="number" id="quantity" name="quantity" required>
+        <label for="whatsapp">Email:</label>
+        <input type="email" id="email" name="email" required>
 
-        <label for="price">Preço em Dólar:</label>
-        <input type="number" step="0.01" id="price" name="price" required>
-
-        <label for="cooperative">Cooperativa (%):</label>
-        <input type="number" step="0.01" id="cooperative" name="cooperative" required>
-
-        <label for="funrural">Funrural:</label>
-        <input type="checkbox" id="funrural" name="funrural">
-        <label for="funrural">Sim</label>
+        
         
         <button type="submit" name="submit">Calcular</button>
         
     </form>
-    <script src="script.js"></script>
+    
   </body>
 
 

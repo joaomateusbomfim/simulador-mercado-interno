@@ -15,10 +15,9 @@ document.getElementById('simulator-form').addEventListener('submit', function(ev
     }
   
     // Envia mensagem pelo WhatsApp
-    var message = 'Olá, ' + fullname + '! O valor total bruto é de: $' + totalBruto.toFixed(2);
+    var message = 'O valor total bruto é de: $' + totalBruto.toFixed(2);
     // sendWhatsAppMessage(whatsapp, message);
     console.log(message);
-    console.log(`Whatsapp: `, whatsapp);
     console.log(`Quantidade: `, quantity);
     console.log(`Preço em Dólar: `, price);
     console.log(`Cooperativa: `, cooperative);
