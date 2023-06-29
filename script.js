@@ -23,7 +23,7 @@ document.getElementById('calculador-form').addEventListener('submit', function(e
 
     
     // Limpa o formulário
-    document.getElementById('simulator-form').reset();
+    document.getElementById('calculador-form').reset();
   });
   
   function sendWhatsAppMessage(number, message) {
