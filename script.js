@@ -8,7 +8,7 @@ document.querySelector('button[type="submit"]').addEventListener('click', functi
   var totalBruto = price * quantity * 2.2046 * 1000;
   var message = 'O valor total bruto é de: $' + totalBruto.toFixed(2);
   var url = `enviado.html?message=${encodeURIComponent(message)}`;
-  window.open(url);
+  window.location.href(url);
 
   console.log(message);
   console.log(`Quantidade: `, quantity);
