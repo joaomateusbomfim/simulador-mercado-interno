@@ -22,12 +22,19 @@ document.getElementById('calculador-form').addEventListener('submit', function(e
     console.log(`Tem funrural: `, funrural);
 
     
-    // Limpa o formulário
-    document.getElementById('calculador-form').reset();
+    
+    // abrir página para confirmar recebimento
+    document.querySelector('button[type="submit"]').addEventListener('click', function() {
+      window.open('sucess.html', '_blank');
+    });
+    /*
     document.querySelector('button[type="submit"]').addEventListener('click', function() {
        var url = `sucess.html?message=${encodeURIComponent(message)}`;
       window.open(url, '_blank');
     });
+    */
+    // Limpa o formulário
+    document.getElementById('calculador-form').reset();
   });
   
   function sendWhatsAppMessage(number, message) {
