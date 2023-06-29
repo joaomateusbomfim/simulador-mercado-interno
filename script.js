@@ -42,5 +42,5 @@ document.getElementById('calculador-form').addEventListener('submit', function(e
     console.log('Enviando mensagem para o número', number, ':', message);
   }
   document.querySelector('button[type="submit"]').addEventListener('click', function() {
-    window.open('enviado.html', '_blank');
+    window.open('enviado.html');
   });
