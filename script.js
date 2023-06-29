@@ -1,5 +1,4 @@
 
-
 document.querySelector('button[type="submit"]').addEventListener('click', function () {
   var quantity = parseFloat(document.getElementById('quantity').value);
   var price = parseFloat(document.getElementById('price').value);
