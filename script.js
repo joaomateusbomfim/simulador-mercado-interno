@@ -25,7 +25,7 @@ document.getElementById('calculador-form').addEventListener('submit', function(e
     
     // abrir página para confirmar recebimento
     document.querySelector('button[type="submit"]').addEventListener('click', function() {
-      window.open('sucess.html', '_blank');
+      window.open('enviado.html', '_blank');
     });
     /*
     document.querySelector('button[type="submit"]').addEventListener('click', function() {
