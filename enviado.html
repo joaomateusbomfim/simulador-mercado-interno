@@ -12,9 +12,11 @@
 <body>
     <h1>Obrigado pelo envio dos dados</h1>
     <h2 id="mensagem"></h2>
+    <p>Nome: {{ simulator-form.fullname }}</p>
     <script>
         var urlParams = new URLSearchParams(window.location.search);
         var newMessage = urlParams.get('message');
+        var nome = urlParams.get('message');
         console.log(newMessage);
         document.getElementById("mensagem").innerHTML = newMessage;
     </script>
