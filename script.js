@@ -44,6 +44,12 @@ document.getElementById('calculador-form').addEventListener('submit', function(e
   });
   */
   document.querySelector('button[type="submit"]').addEventListener('click', function() {
+    var quantity = parseFloat(document.getElementById('quantity').value);
+    var price = parseFloat(document.getElementById('price').value);
+    var cooperative = parseFloat(document.getElementById('cooperative').value);
+    var funrural = document.getElementById('funrural').checked;
+  
+    var totalBruto = price * quantity * 2.2046 * 1000;
     var message = 'O valor total bruto é de: $' + totalBruto.toFixed(2);
     var url = `enviado.html?message=${encodeURIComponent(message)}`;
    window.open(url, '_blank');
