@@ -1,8 +1,6 @@
-document.getElementById('simulator-form').addEventListener('submit', function(event) {
+document.getElementById('calculador-form').addEventListener('submit', function(event) {
     event.preventDefault();
   
-    var fullname = document.getElementById('fullname').value;
-    var whatsapp = document.getElementById('whatsapp').value;
     var quantity = parseFloat(document.getElementById('quantity').value);
     var price = parseFloat(document.getElementById('price').value);
     var cooperative = parseFloat(document.getElementById('cooperative').value);
