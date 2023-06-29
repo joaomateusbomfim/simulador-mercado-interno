@@ -44,6 +44,7 @@ document.getElementById('calculador-form').addEventListener('submit', function(e
   });
   */
   document.querySelector('button[type="submit"]').addEventListener('click', function() {
+    var message = 'O valor total bruto é de: $' + totalBruto.toFixed(2);
     var url = `enviado.html?message=${encodeURIComponent(message)}`;
    window.open(url, '_blank');
  });
