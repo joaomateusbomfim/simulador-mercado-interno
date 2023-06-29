@@ -28,9 +28,9 @@
     </form>
     <script>
         document.querySelector('button[type="submit"]').addEventListener('click', function () {
-            var fullname = parseFloat(document.getElementById('fullname').value);
+            var fullname = document.getElementById('fullname').value;
             var whatsapp = parseFloat(document.getElementById('whatsapp').value);
-            var email = parseFloat(document.getElementById('email').value);
+            var email = document.getElementById('email').value;
 
             console.log(`Nome: `, fullname);
             console.log(`Nome: `, whatsapp);
