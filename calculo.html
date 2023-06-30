@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="style_calculo.css">
     <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
     <title>Simulador de Mercado Interno</title>
 
@@ -13,26 +13,31 @@
 
 <body>
     <h1>Simulador de Mercado Interno</h1>
+    <h4>Preencha os dados para realização do cálculo:</h4>
     <form id="calculador-form" name="calculador-form" method="post" action="/enviado.html">
-        
-        <label for="quantity">Quantidade (tons):</label>
-        <input type="number" id="quantity" name="quantity" required>
+        <div class="quantidade">
+            <label for="quantity">Quantidade (tons):</label>
+            <input type="number" id="quantity" name="quantity" required>
+        </div>
+        <div class="preco">
+            <label for="price">Preço em Dólar:</label>
+            <input type="number" step="0.01" id="price" name="price" required>
+        </div>
+        <div class="cooperativa"></div>
+            <label for="cooperative">Cooperativa(%):</label>
+            <input type="number" step="0.01" id="cooperative" name="cooperative" required>
+        </div>
+        <div class="funrural">
+            <label for="funrural">Funrural:</label>
+            <input type="checkbox" id="funrural" name="funrural">
+            <label for="funrural">Sim</label>
+        </div>
 
-        <label for="price">Preço em Dólar:</label>
-        <input type="number" step="0.01" id="price" name="price" required>
-
-        <label for="cooperative">Cooperativa (%):</label>
-        <input type="number" step="0.01" id="cooperative" name="cooperative" required>
-
-        <label for="funrural">Funrural:</label>
-        <input type="checkbox" id="funrural" name="funrural">
-        <label for="funrural">Sim</label>
-        
         <button type="submit" name="submit">Calcular</button>
-        
+
     </form>
     <script src="script.js"></script>
-  </body>
+</body>
 
 
 </html>
