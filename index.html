@@ -23,11 +23,21 @@
         <label for="whatsapp">Email:</label>
         <input type="email" id="email" name="email" required>
 
-        <button type="submit" name="submit">Cadastrar</button>        
+        <button type="submit" name="submit">Cadastrar</button>
 
     </form>
     <script>
-        document.querySelector('button[type="submit"]').addEventListener('click', function () {
+        document.getElementById("simulator-form").addEventListener("submit", function (event) {
+            event.preventDefault(); // Evita o envio do formulário
+
+            var fullName = document.getElementById("fullname").value;
+
+            sessionStorage.setItem("fullname", fullName); // Armazena o valor em sessionStorage
+
+            window.location.href = "enviado.html"; // Redireciona para a terceira página
+        });
+
+        /*document.querySelector('button[type="submit"]').addEventListener('click', function () {
             var fullname = document.getElementById('fullname').value;
             var whatsapp = parseFloat(document.getElementById('whatsapp').value);
             var email = document.getElementById('email').value;
@@ -35,7 +45,8 @@
             console.log(`Nome: `, fullname);
             console.log(`Whatsapp: `, whatsapp);
             console.log(`Email: `, email);
-        })   
+        })
+        */   
     </script>
 
 </body>

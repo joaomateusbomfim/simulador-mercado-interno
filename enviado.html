@@ -16,7 +16,7 @@
     <script>
         var urlParams = new URLSearchParams(window.location.search);
         var newMessage = urlParams.get('message');
-        var fullName = urlParams.get('fullname');
+        var fullName = sessionStorage.getItem('fullname');
         console.log(newMessage);
         document.getElementById("mensagem").innerHTML = newMessage;
         document.getElementById("agradecimento").innerHTML = `Obrigado ${fullName} por participar`;
