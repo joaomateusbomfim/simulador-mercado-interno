@@ -6,23 +6,28 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+
     <title>Simulador de Mercado Interno</title>
 
 </head>
 
 <body>
     <h1>Simulador de Mercado Interno</h1>
+    <h4>Antes de calcular, por favor preencha os campos de cadastro:</h4>
     <form id="simulator-form" name="simulator-form" method="post" action="/calculo.html" data-netlify="true">
-
-        <label for="fullname">Nome:</label>
-        <input type="text" id="fullname" name="fullname" required>
-
-        <label for="whatsapp">Whatsapp:</label>
-        <input type="tel" id="whatsapp" name="whatsapp" required>
-
-        <label for="whatsapp">Email:</label>
-        <input type="email" id="email" name="email" required>
-
+        <div class="nome_completo">
+            <label for="fullname" id="fullname">Nome completo:</label>
+            <input type="text" id="fullname" name="fullname" placeholder="Digite o nome completo" required>
+        </div>
+                <div class="email">
+            <label for="whatsapp" id="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="nome@email.com" required>
+        </div>
+        <div class="whapp">
+            <label for="whatsapp" id="whatsapp">Whatsapp:</label>
+            <input type="tel" id="whatsapp" name="whatsapp" placeholder="(DDD)9999-99999" required>
+        </div>
         <button type="submit" name="submit">Cadastrar</button>
 
     </form>
@@ -37,17 +42,7 @@
             window.location.href = "calculo.html"; // Redireciona para a terceira página
         });
 
-        /*document.querySelector('button[type="submit"]').addEventListener('click', function () {
-            var fullname = document.getElementById('fullname').value;
-            var whatsapp = parseFloat(document.getElementById('whatsapp').value);
-            var email = document.getElementById('email').value;
-
-            console.log(`Nome: `, fullname);
-            console.log(`Whatsapp: `, whatsapp);
-            console.log(`Email: `, email);
-        })
-        document.getElementById("simulator-form").addEventListener("submit", function (event) {
-        */   
+        
     </script>
 
 </body>
