@@ -1,6 +1,7 @@
 var urlParams = new URLSearchParams(window.location.search);
 var fullName = urlParams.get('fullname');
 console.log(fullName);
+document.getElementById('fullname').value = fullName;
 
 document.querySelector('button[type="submit"]').addEventListener('click', function () {
   var quantity = parseFloat(document.getElementById('quantity').value);
@@ -10,7 +11,7 @@ document.querySelector('button[type="submit"]').addEventListener('click', functi
 
   var totalBruto = price * quantity * 2.2046 * 1000;
   var message = 'O valor total bruto é de: $' + totalBruto.toFixed(2);
-  var url = `enviado.html?message=${encodeURIComponent(message)}`;
+  var url = `enviado.html?message=${encodeURIComponent(message)}&fullname=${encodeURIComponent(fullName)}`;
   window.open(url, '_self');
 
   console.log(message);
