@@ -1,6 +1,6 @@
 var urlParams = new URLSearchParams(window.location.search);
 var fullName = urlParams.get('fullname');
-document.getElementById('fullname').value = fullName;
+// document.getElementById('fullname').value = fullName;
 console.log(fullName);
 
 document.querySelector('button[type="submit"]').addEventListener('click', function () {
