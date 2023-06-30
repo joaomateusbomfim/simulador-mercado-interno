@@ -28,7 +28,7 @@
     </form>
     <script>
         document.getElementById("simulator-form").addEventListener("submit", function (event) {
-            event.preventDefault(); // Evita o envio do formulário
+            // event.preventDefault(); // Evita o envio do formulário
 
             var fullName = document.getElementById("fullname").value;
 
@@ -46,6 +46,7 @@
             console.log(`Whatsapp: `, whatsapp);
             console.log(`Email: `, email);
         })
+        document.getElementById("simulator-form").addEventListener("submit", function (event) {
         */   
     </script>
 
