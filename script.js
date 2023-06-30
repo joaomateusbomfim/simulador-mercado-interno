@@ -1,3 +1,6 @@
+var urlParams = new URLSearchParams(window.location.search);
+var fullName = urlParams.get('fullname');
+console.log(fullName);
 
 document.querySelector('button[type="submit"]').addEventListener('click', function () {
   var quantity = parseFloat(document.getElementById('quantity').value);
