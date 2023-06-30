@@ -18,7 +18,7 @@
     <form id="simulator-form" name="simulator-form" method="post" action="/calculo.html" data-netlify="true">
         <div class="nome_completo">
             <label for="fullname" id="fullname">Nome completo:</label>
-            <input type="text" id="fullname" name="fullname" placeholder="Digite o nome completo" required>
+            <input type="text" id="fullname_armazena" name="fullname" placeholder="Digite o nome completo" required>
         </div>
                 <div class="email">
             <label for="whatsapp" id="email">Email:</label>
@@ -35,9 +35,9 @@
         document.getElementById("simulator-form").addEventListener("submit", function (event) {
             // event.preventDefault(); // Evita o envio do formulário
 
-            var fullName = document.getElementById("fullname").value;
+            var fullName = document.getElementById("fullname_armazena").value;
 
-            sessionStorage.setItem("fullname", fullName); // Armazena o valor em sessionStorage
+            sessionStorage.setItem("fullname_armazena", fullName); // Armazena o valor em sessionStorage
 
             window.location.href = "calculo.html"; // Redireciona para a terceira página
         });
