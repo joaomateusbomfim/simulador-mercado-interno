@@ -13,24 +13,29 @@
 </head>
 
 <body>
-    <h1>Simulador de Mercado Interno</h1>
-    <h4>Antes de calcular, por favor preencha os campos de cadastro:</h4>
-    <form id="simulator-form" name="simulator-form" method="post" action="/calculo.html" data-netlify="true">
-        <div class="nome_completo">
-            <label for="fullname" id="fullname">Nome completo:</label>
-            <input type="text" id="fullname_armazena" name="fullname" placeholder="Digite o nome completo" required>
-        </div>
-                <div class="email">
-            <label for="whatsapp" id="email">Email:</label>
-            <input type="email" id="email" name="email" placeholder="nome@email.com" required>
-        </div>
-        <div class="whapp">
-            <label for="whatsapp" id="whatsapp">Whatsapp:</label>
-            <input type="tel" id="whatsapp" name="whatsapp" placeholder="(DDD)9999-99999" required>
-        </div>
-        <button type="submit" name="submit">Cadastrar</button>
+    <main>
+        <h1>Simulador de Mercado Interno</h1>
+        <h4>Antes de calcular, por favor preencha os campos de cadastro:</h4>
+    </main>
+    <div class="container">
 
-    </form>
+        <form id="simulator-form" name="simulator-form" method="post" action="/calculo.html" data-netlify="true">
+            <div class="nome_completo">
+                <label for="fullname" id="fullname">Nome completo:</label>
+                <input type="text" id="fullname_armazena" name="fullname" placeholder="Digite o nome completo" required>
+            </div>
+            <div class="email">
+                <label for="whatsapp" id="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="nome@email.com" required>
+            </div>
+            <div class="whapp">
+                <label for="whatsapp" id="whatsapp">Whatsapp:</label>
+                <input type="tel" id="whatsapp" name="whatsapp" placeholder="(DDD)9999-99999" required>
+            </div>
+            <button type="submit" name="submit">Cadastrar</button>
+
+        </form>
+    </div>
     <script>
         document.getElementById("simulator-form").addEventListener("submit", function (event) {
             // event.preventDefault(); // Evita o envio do formulário
@@ -42,7 +47,7 @@
             window.location.href = "calculo.html"; // Redireciona para a terceira página
         });
 
-        
+
     </script>
 
 </body>
